@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedmydog - Help Street Dogs</title>
+  <meta name="description"
+    content="Feedmydog is an NGO dedicated to helping street dogs. Donate, volunteer, and make a difference in the lives of animals in need.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Feedmydog - Help Street Dogs">
+  <meta property="og:description"
+    content="Feedmydog is an NGO dedicated to helping street dogs. Donate, volunteer, and make a difference in the lives of animals in need.">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1744907451349-c1ece07e6f3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxGZWVkbXlkb2d8ZW58MXwwfHx8MTc1NjE3OTQ4MHww&ixlib=rb-4.1.0&q=80&w=1080">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Feedmydog - Help Street Dogs">
+  <meta property="twitter:description"
+    content="Feedmydog is an NGO dedicated to helping street dogs. Donate, volunteer, and make a difference in the lives of animals in need.">
+  <meta property="twitter:image"
+    content="https://images.unsplash.com/photo-1744907451349-c1ece07e6f3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxGZWVkbXlkb2d8ZW58MXwwfHx8MTc1NjE3OTQ4MHww&ixlib=rb-4.1.0&q=80&w=1080">
+
+  <!-- Favicon (Placeholder) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5', // Indigo-500
+            secondary: '#6366F1', // Indigo-400
+            accent: '#F59E0B',    // Yellow-500
+            neutral: '#F3F4F6',   // Gray-100
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Organization Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Feedmydog",
+  "description": "An NGO dedicated to helping street dogs.",
+  "url": "https://www.feedmydog.org",  // Replace with actual URL
+  "logo": "https://via.placeholder.com/150", // Replace with actual logo URL
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-555-5555", // Replace with actual phone number
+    "contactType": "customer service",
+    "areaServed": "Worldwide",
+    "availableLanguage": ["en"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/feedmydog", // Replace with actual Facebook URL
+    "https://twitter.com/feedmydog",      // Replace with actual Twitter URL
+    "https://www.instagram.com/feedmydog"   // Replace with actual Instagram URL
+  ]
+}
+</script>
+
+</head>
+
+<body class="bg-neutral font-sans antialiased">
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md" role="banner">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main Navigation">
+      <div>
+        <a href="#" class="flex items-center">
+          <img src="https://via.placeholder.com/50" alt="Feedmydog Logo" class="h-10 w-auto mr-2">
+          <span class="text-xl font-bold text-primary">Feedmydog</span>
+        </a>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#features" class="hover:text-primary transition-colors">Features</a>
+        <a href="#about" class="hover:text-primary transition-colors">About Us</a>
+        <a href="#donate" class="hover:text-primary transition-colors">Donate</a>
+        <a href="#volunteer" class="hover:text-primary transition-colors">Volunteer</a>
+      </div>
+      <div class="md:hidden">
+        <button aria-label="Open Menu" class="text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-primary">
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-24" role="region" aria-label="Hero Section">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1744907451349-c1ece07e6f3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxGZWVkbXlkb2d8ZW58MXwwfHx8MTc1NjE3OTQ4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Cute puppy on road" class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+    <div class="container mx-auto px-6 relative z-10 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Making a Difference, One Paw at a Time</h1>
+      <p class="text-lg md:text-xl mb-8">Join us in our mission to provide food, shelter, and care for street dogs in
+        need.</p>
+      <a href="#donate" class="inline-block bg-accent hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">Donate Now</a>
+      <p class="mt-2 text-sm">Image by <a href="https://unsplash.com/@katelynwarner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="underline">Katelyn Warner</a> on <a href="https://unsplash.com/photos/a-cute-white-puppy-stands-on-a-road-8Q9i08w6Umc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="underline">Unsplash</a></p>
+    </div>
+  </section>
+
+  <!-- Social Proof Badges -->
+  <section class="bg-white py-12" role="region" aria-label="Social Proof">
+    <div class="container mx-auto px-6 flex flex-wrap justify-center items-center gap-8">
+      <img src="https://via.placeholder.com/100x50" alt="Featured on News Site 1" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+      <img src="https://via.placeholder.com/100x50" alt="Featured on News Site 2" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+      <img src="https://via.placeholder.com/100x50" alt="Featured on Charity Watch" class="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity">
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-16" role="region" aria-labelledby="features-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="features-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Key Initiatives</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <img src="https://images.unsplash.com/photo-1572987372598-fcd543795afb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwyfHxGZWVkbXlkb2d8ZW58MXwwfHx8MTc1NjE3OTQ4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Dog being fed" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Providing Daily Meals</h3>
+            <p class="text-gray-700">We ensure that street dogs have access to nutritious meals every day.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <img src="https://via.placeholder.com/600x400" alt="Veterinary Care" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Veterinary Care & Vaccination</h3>
+            <p class="text-gray-700">Providing essential veterinary care, vaccinations, and medical treatment to keep
+              dogs healthy.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <img src="https://via.placeholder.com/600x400" alt="Shelter and Adoption" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Shelter & Safe Havens</h3>
+            <p class="text-gray-700">Creating safe shelters and adoption programs to give dogs a loving home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-primary text-white py-16" role="region" aria-labelledby="benefits-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="benefits-heading" class="text-3xl font-bold mb-12 text-center">Why Your Support Matters</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Improved Health & Well-being</h3>
+          <p class="text-lg">Your contribution ensures that street dogs receive the nutrition and care they need to
+            live healthy lives.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Reduced Animal Suffering</h3>
+          <p class="text-lg">By providing shelter and medical care, we alleviate the suffering of vulnerable animals
+            living on the streets.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Building a Compassionate Community</h3>
+          <p class="text-lg">Together, we can create a community that values and protects the welfare of all animals.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Long-Term Impact</h3>
+          <p class="text-lg">Your support helps us implement sustainable programs that create lasting positive change
+            for street dogs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Case Cards -->
+  <section class="py-16" role="region" aria-labelledby="use-cases-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="use-cases-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">How Your Donation Helps</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">₹500</h3>
+          <p class="text-gray-700">Provides a week's worth of food for a street dog.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">₹2,000</h3>
+          <p class="text-gray-700">Covers the cost of vaccinating a dog against rabies.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">₹5,000</h3>
+          <p class="text-gray-700">Provides shelter and care for a dog for a month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16 bg-neutral" role="region" aria-labelledby="about-heading">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 id="about-heading" class="text-3xl font-bold text-gray-900 mb-6">About Feedmydog</h2>
+        <p class="text-gray-700 mb-8">We are a dedicated team of animal lovers committed to improving the lives of
+          street dogs. Our mission is to provide food, medical care, and shelter to these vulnerable animals, and to
+          promote compassion and awareness within our community.</p>
+        <a href="#" class="inline-block bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors">Learn More</a>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MXwxfHNlYXJjaHwxfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MTA2Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="Woman with donation card" class="w-full h-64 object-cover rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider (Static HTML for this example) -->
+  <section class="py-16 bg-white" role="region" aria-labelledby="testimonials-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="testimonials-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">What People Say</h2>
+      <div class="text-center">
+        <p class="text-xl italic text-gray-700 mb-4">"Feedmydog is doing incredible work. Their dedication to street
+          dogs is truly inspiring."</p>
+        <p class="font-semibold text-gray-900">John Smith, Local Resident</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="py-16 bg-neutral" role="region" aria-labelledby="faq-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="faq-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button aria-expanded="false" class="w-full text-left font-semibold text-gray-900 focus:outline-none">
+            What does Feedmydog do?
+          </button>
+          <div aria-hidden="true" class="mt-2 text-gray-700 hidden">
+            We provide food, medical care, and shelter to street dogs in need.
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button aria-expanded="false" class="w-full text-left font-semibold text-gray-900 focus:outline-none">
+            How can I donate?
+          </button>
+          <div aria-hidden="true" class="mt-2 text-gray-700 hidden">
+            You can donate through our website, via bank transfer, or through local donation drives.
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <button aria-expanded="false" class="w-full text-left font-semibold text-gray-900 focus:outline-none">
+            How can I volunteer?
+          </button>
+          <div aria-hidden="true" class="mt-2 text-gray-700 hidden">
+            You can sign up to volunteer on our website. We need help with feeding, cleaning, and administrative
+            tasks.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-accent text-white text-center" role="region" aria-labelledby="cta-heading">
+    <div class="container mx-auto px-6">
+      <h2 id="cta-heading" class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+      <p class="text-lg mb-8">Your support can change the lives of street dogs. Donate today and help us create a
+        better world for animals.</p>
+      <a href="#donate" class="inline-block bg-white hover:bg-gray-100 text-accent font-semibold py-3 px-8 rounded-lg transition-colors">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">Feedmydog</h3>
+          <p class="text-gray-400">An NGO dedicated to improving the lives of street dogs through food, shelter, and
+            medical care.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Our Mission</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Get Involved</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Donate</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Volunteer</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Sponsor a Dog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Feedmydog. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
